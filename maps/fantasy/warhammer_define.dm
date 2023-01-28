@@ -1,5 +1,5 @@
 
-/datum/map/warhammer
+/datum/map/fantasy
 	name = "Border Princes"
 	full_name = "Border Princes"
 	path = "fantasy"
