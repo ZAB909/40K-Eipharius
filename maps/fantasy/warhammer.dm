@@ -5,12 +5,15 @@
 	#include "../shared/items/clothing.dm"
 	#include "../shared/items/cards_ids.dm"
 
-	#include "fantasy-1-underground.dmm"
-	#include "fantasy-2-surface.dmm"
+	#include "warhammer-1.dmm"
+	#include "warhammer-2.dmm"
+	#include "warhammer-3.dmm"
+	#include "warhammer-4.dmm"
+	#include "warhammer-5.dmm"
 
 	#include "../../code/modules/lobby_music/generic_songs.dm"
 
-	#define using_map_DATUM /datum/map/fantasy
+	#define using_map_DATUM /datum/map/warhammer
 
 #elif !defined(MAP_OVERRIDE)
 
