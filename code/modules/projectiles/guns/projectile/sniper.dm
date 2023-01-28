@@ -132,10 +132,10 @@
 /obj/item/gun/projectile/automatic/galvanic/rifle
 	name = "Mark IV Arkhan Pattern Galvanic Rifle"
 	desc = "A semi automatic rifle, modelled after the martian flintlock weapons of the past, it uses servo-eletric rounds which send a powerful eletric current through the targets body while also tracking them."
-	icon_state = "galvrifle" 
-	item_state = "musket" 
-	loaded_icon = "galvrifle" 
-	unloaded_icon = "galvrifle" 
+	icon_state = "galvrifle"
+	item_state = "musket"
+	loaded_icon = "galvrifle"
+	unloaded_icon = "galvrifle-e"
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	wielded_item_state = "las_musket"
 	unwielded_loaded_icon = "musket"
@@ -143,7 +143,7 @@
 	unwielded_unloaded_icon = "musket"
 	wielded_unloaded_icon = "las_musket"
 	caliber = "galvanic"
-	max_shells = 8 //+1 so technically 9.
+	max_shells = 7 //Fits seven rounds in the mag, with a revolving cylinder. No room for extra rounds.
 	str_requirement = 17
 	move_delay = 3
 	one_hand_penalty = 7
@@ -151,7 +151,7 @@
 	fire_delay = 4.9
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	magazine_type = /obj/item/ammo_magazine/galvanic
-	allowed_magazines = list(/obj/item/ammo_magazine/galvanic, /obj/item/ammo_magazine/galvanic/fire)
+	allowed_magazines = list(/obj/item/ammo_magazine/galvanic, /obj/item/ammo_magazine/galvanic/fire, /obj/item/ammo_magazine/galvanic/emp, /obj/item/ammo_magazine/galvanic/airburst, /obj/item/ammo_magazine/galvanic/pain)
 	firemodes = list()
 	w_class = ITEM_SIZE_LARGE
 
