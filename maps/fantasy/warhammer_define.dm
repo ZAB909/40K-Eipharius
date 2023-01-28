@@ -1,19 +1,19 @@
 
 /datum/map/warhammer
-	name = "Eipharius"
-	full_name = "Eipharius"
-	path = "warhammer"
-	station_name  = "Capital City Messina"
-	station_short = "Eipharius"
-	dock_name     = "Eipharius"
-	boss_name     = "Segmentum Command"
-	boss_short    = "SC"
-	company_name  = "Imperium of Man"
-	company_short = "Imperium"
-	system_name = "Helican Subsector"
+	name = "Border Princes"
+	full_name = "Border Princes"
+	path = "fantasy"
+	station_name  = "Border Prince's Principality of Heldenstadt"
+	station_short = "Border Princes"
+	dock_name     = "Border Princes"
+	boss_name     = "The Empire"
+	boss_short    = "Empire"
+	company_name  = "The Empire"
+	company_short = "The Empire"
+	system_name = "The Old World"
 
-	lobby_icon = 'maps/delta/fullscreen.dmi'
-	lobby_screens = list("lobby1","lobby2","lobby3","lobby4")
+	lobby_icon = 'maps/fantasy/fullscreen.dmi'
+	lobby_screens = list("lobby1","lobby2","lobby3")
 
 	station_levels = list(1,2,3,4)
 	contact_levels = list(1,2,3,4)
