@@ -535,12 +535,6 @@ obj/item/clothing/suit/armor
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
-/obj/item/clothing/suit/armor/enforcer/newenforcer
-	name = "knightly jacket"
-	desc = "The flak jacket worn by a Messina Enforcer. Light and robust in the colour black, designed to protect against blast and small arms fire."
-	icon_state = "enforcer"
-	item_state = "enforcer"
-
 /obj/item/clothing/suit/armor/marshal
 	name = "Carapace Patrol Jacket"
 	desc = "The carapace patrol jacket worn by a Messina Marshal. Light and robust in the colour black, designed to protect against direct blasts and small arms fire."
@@ -1774,3 +1768,40 @@ obj/item/clothing/suit/armor
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	canremove = 0
+
+
+/obj/item/clothing/suit/armor/fcknight
+	name = "Free Company Knight Plate Armor"
+	desc = "The personal plate armor of the Prince's Hedge Knight."
+	icon_state = "fccap"
+	item_state = "fccap"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 75, bullet = 60, laser = 50, energy = 20, bomb = 30, bio = 20, rad = 20)
+	sales_price = 60
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/fcplate
+	name = "Free Company Hauberk"
+	desc = "The hauberk of one of the Prince's free company's chosen."
+	icon_state = "fcchain"
+	item_state = "fcchain"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 60, bullet = 40, laser = 50, energy = 20, bomb = 30, bio = 20, rad = 20)
+	sales_price = 45
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/fcgamb
+	name = "Free Company Gambeson"
+	desc = "The gambeson of the less fortunate men among the Prince's personal guard."
+	icon_state = "fcgambeson"
+	item_state = "fcgambeson"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 45, bullet = 30, laser = 50, energy = 20, bomb = 30, bio = 20, rad = 20)
+	sales_price = 30
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE

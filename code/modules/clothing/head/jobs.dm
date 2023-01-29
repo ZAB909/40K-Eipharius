@@ -665,3 +665,30 @@
 	armor = list(melee = 65, bullet = 65, laser = 35, energy = 40, bomb = 40, bio = 0, rad = 40)
 	flags_inv = HIDEMASK|HIDEEARS|BLOCKHAIR
 	sales_price = 60
+
+/obj/item/clothing/head/helmet/fcknight
+	name = "Free Company Knight's Helm"
+	desc = "The personal helm of the Prince's Hedge Knight."
+	icon_state = "fccaphelm"
+	item_state = "fccap"
+	armor = list(melee = 65, bullet = 55, laser = 35, energy = 40, bomb = 40, bio = 0, rad = 40)
+	flags_inv = HIDEMASK|HIDEEARS|BLOCKHAIR
+	sales_price = 50
+
+/obj/item/clothing/head/helmet/fcplate
+	name = "Free Company Plate Helm"
+	desc = "The plate helm of one of the Prince's free company's chosen."
+	icon_state = "fchelm0"
+	item_state = "fchelm0"
+	armor = list(melee = 50, bullet = 45, laser = 35, energy = 40, bomb = 40, bio = 0, rad = 40)
+	flags_inv = HIDEMASK|HIDEEARS|BLOCKHAIR
+	sales_price = 35
+
+/obj/item/clothing/head/helmet/fckettle
+	name = "Free Company Plate Helm"
+	desc = "The plate helm of one of the Prince's free company's chosen."
+	icon_state = "fckettle"
+	item_state = "fckettle"
+	armor = list(melee = 40, bullet = 35, laser = 35, energy = 40, bomb = 40, bio = 0, rad = 40)
+	flags_inv = HIDEMASK|HIDEEARS|BLOCKHAIR
+	sales_price = 25
