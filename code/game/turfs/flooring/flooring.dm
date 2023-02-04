@@ -52,16 +52,6 @@ var/list/flooring_types
 	flags = TURF_HAS_EDGES | TURF_REMOVE_SHOVEL
 	build_type = /obj/item/stack/tile/grass
 
-/decl/flooring/sand
-	name = "sand"
-	desc = "Very grainular"
-	icon = 'icons/turf/flooring/sand.dmi'
-	icon_base = "sand0"
-	has_base_range = 3
-	damage_temperature = T0C+80
-	flags = TURF_HAS_EDGES | TURF_REMOVE_SHOVEL
-	build_type = /obj/item/stack/tile/grass
-
 /decl/flooring/asteroid
 	name = "coarse sand"
 	desc = "Gritty and unpleasant."

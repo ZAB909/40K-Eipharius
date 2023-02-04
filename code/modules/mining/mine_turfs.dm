@@ -583,6 +583,6 @@ var/list/mining_floors = list()
 
 
 /turf/simulated/mineral/snowycave
-	name = "snowy rock"
+	name = "Mountain rock"
 	icon_state = "snow14"
-	desc = "An ancient snow covered rock."
+	desc = "An ancient mountain rock."
