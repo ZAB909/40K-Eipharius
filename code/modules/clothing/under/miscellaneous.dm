@@ -1,3 +1,9 @@
+/obj/item/clothing/under/dwarf/chainmail
+	name = "Dwarf Chainmail"
+	desc = "Are the spaces between the metal rings shorter too?"
+	icon_state = "dwarf_chain"
+	item_state = "dwarf_chain"
+
 /obj/item/clothing/under/pj/red
 	name = "red pj's"
 	desc = "Sleepwear."
@@ -708,3 +714,6 @@
 	desc = "This standard Munitorum-issue uniform has had all imperial markings removed"
 	icon_state = "rm_uniform"
 	item_state = "rm_uniform_s"
+
+
+
