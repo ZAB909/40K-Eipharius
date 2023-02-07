@@ -108,6 +108,15 @@ Template:
 	name = ""
 */
 
+// FANTASY //
+
+/obj/effect/landmark/start/dawi
+	name = "Artificer"
+	icon_state = "dawi"
+
+// commented out eipharius code //
+
+/*
 // Governorship //
 
 /obj/effect/landmark/start/governor
@@ -252,7 +261,7 @@ Template:
 	name = "Cultist Specialist"
 
 
-
+*/
 //Warhammer stuff
 /obj/effect/landmark/JoinLate
 	name = "JoinLate"

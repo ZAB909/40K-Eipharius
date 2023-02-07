@@ -1,3 +1,28 @@
+// umgak dawi
+
+/obj/item/clothing/under/dwarf/chainmail
+	name = "Dwarf Chainmail"
+	desc = "Are the spaces between the metal rings shorter too?"
+	icon_state = "dwarf_chain"
+	item_state = "dwarf_chain"
+
+
+// CHEESE EATERS YES YES //
+
+/obj/item/clothing/under/skaven
+	name = "Skaven Rags"
+	desc = "Basic rags-scraps of any self respecting clan rat. Much better than normal man-things clothing yes yes!"
+	icon_state = "rat_black"
+	worn_state = "rat_black"
+	item_state = "rat_black"
+
+/obj/item/clothing/under/skaven/red
+	name = "Stormvermin Rags"
+	desc = "Basic rags-scraps of any self respecting Storm vermin, or better. Much better than normal clan rats' clothing yes yes!"
+	icon_state = "rat_red"
+	worn_state = "rat_red"
+	item_state = "rat_red"
+
 /obj/item/clothing/under/pj/red
 	name = "red pj's"
 	desc = "Sleepwear."
@@ -708,3 +733,12 @@
 	desc = "This standard Munitorum-issue uniform has had all imperial markings removed"
 	icon_state = "rm_uniform"
 	item_state = "rm_uniform_s"
+
+/obj/item/clothing/under/guard/renegadeuniform/red
+	name = "renegade militia uniform"
+	desc = "This standard Munitorum-issue uniform has had all imperial markings removed"
+	icon_state = "rm_uniform_red"
+	item_state = "rm_uniform_s_red"
+
+
+
