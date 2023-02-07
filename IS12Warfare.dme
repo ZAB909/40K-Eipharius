@@ -517,6 +517,7 @@
 #include "code\game\jobs\job\adeptus_ministorum.dm"
 #include "code\game\jobs\job\astra_militarum.dm"
 #include "code\game\jobs\job\civilian.dm"
+#include "code\game\jobs\job\dwarfs.dm"
 #include "code\game\jobs\job\governorship.dm"
 #include "code\game\jobs\job\inquisition.dm"
 #include "code\game\jobs\job\job.dm"

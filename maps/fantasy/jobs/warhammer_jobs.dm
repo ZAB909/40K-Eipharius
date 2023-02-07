@@ -2,7 +2,9 @@
 
 /datum/map/fantasy
 	allowed_jobs = list(
-	/datum/job/penitent,
+	/datum/job/artificer,
+	/datum/job/scavenger,
+
 	)
 
 /mob/living/carbon/human/proc/warfare_language_shit(var/language_name) //reworked from matts original intention, the default language is gothic, this will allow you to now add a faction specific language.

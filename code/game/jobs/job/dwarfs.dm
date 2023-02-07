@@ -6,7 +6,7 @@
 	spawn_positions = 1
 	supervisors = "rock n stone"
 	selection_color = "#848484"
-	outfit_type = /decl/hierarchy/outfit/job/penitent
+	outfit_type = /decl/hierarchy/outfit/job/artificer
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
 

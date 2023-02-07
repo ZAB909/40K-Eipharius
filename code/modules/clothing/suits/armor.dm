@@ -1805,3 +1805,16 @@ obj/item/clothing/suit/armor
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/stormvermin
+	name = "Clan Mors Stormvermin"
+	desc = "The gambeson of the less fortunate men among the Prince's personal guard."
+	icon_state = "rat_red"
+	item_state = "rat_red"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 45, bullet = 30, laser = 50, energy = 20, bomb = 30, bio = 20, rad = 20)
+	sales_price = 15
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
