@@ -29,5 +29,5 @@
 	/obj/item/ammo_box/shotgun = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/twenty = 1,
+	/obj/item/stack/thrones3/twenty = 2,
 )
