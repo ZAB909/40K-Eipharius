@@ -249,27 +249,6 @@ obj/item/clothing/suit/armor
 	icon_state = "prince"
 	item_state = "prince"
 
-// Tau
-
-/obj/item/clothing/suit/armor/fwarmor
-	name = "fire warrior armor"
-	desc = "The impeccable yellow and brown armor of the Tau warrior caste"
-	icon_state = "fw_armor"
-	item_state = "fw_armor"
-	armor = list(melee = 35, bullet = 35, laser = 35, energy = 35, bomb = 35, bio = 0, rad = 0)
-	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA)
-	blood_overlay_type = "armor"
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-	sales_price = 40
-
-/obj/item/clothing/suit/armor/fwarmor/breacher
-	name = "Breacher Armor"
-	desc = "The white and bright armor of a Tau Breacher."
-	icon_state = "tbrea"
-	item_state = "tbrea"
-
 // Ork
 
 /obj/item/clothing/suit/armor/orkarmor
