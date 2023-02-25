@@ -123,6 +123,9 @@ var/list/flooring_types
 /decl/flooring/tiling/stone
 	icon_base = "stone"
 
+/decl/flooring/tiling/brettonian
+	icon_base = "bretcob"
+
 
 /decl/flooring/tiling/mono
 	icon_base = "monotile"

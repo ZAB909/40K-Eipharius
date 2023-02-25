@@ -157,10 +157,20 @@
 
 /turf/simulated/floor/tiled/stone
 	name = "stone tiled floor"
-	icon = 'icons/turf/flooring/tiles.dmi'
 	icon_state = "stone"
 	color = "#808080"
 	initial_flooring = /decl/flooring/tiling/stone
+
+/turf/simulated/floor/tiled/brettonian
+	name = "Brettonian Cobblestone"
+	icon_state = "bretcob"
+	initial_flooring = /decl/flooring/tiling/brettonian
+
+/turf/simulated/floor/tiled/brettonian/corner
+	icon_state = "bretcobcorner"
+
+/turf/simulated/floor/tiled/brettonian/side
+	icon_state = "bretcobside"
 
 /turf/simulated/floor/carpet
 	name = "brown carpet"
