@@ -1785,7 +1785,7 @@ obj/item/clothing/suit/armor
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
-/obj/item/clothing/suit/armor/stormvermin
+/obj/item/clothing/suit/armor/skaven/stormvermin
 	name = "Clan Mors Stormvermin"
 	desc = "The gambeson of the less fortunate men among the Prince's personal guard."
 	icon_state = "rat_red"
@@ -1796,4 +1796,17 @@ obj/item/clothing/suit/armor
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/storage/hazardvest/warlock
+	name = "Mk IV Warlock Engineer Armor"
+	desc = "Take-stolen from Clan Skryre and improve-upgraded via the Warlock's own requirements and needs. It's warpstone protection... protect-helps yes yes."
+	icon_state = "rat_warlock"
+	item_state = "rat_warlock"
+	armor = list(melee = 50, bullet = 60, laser = 60, energy = 0, bomb = 60, bio = 100, rad = 100)
+	canremove = 0
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	unacidable = 1
+
 
