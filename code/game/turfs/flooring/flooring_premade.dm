@@ -168,9 +168,11 @@
 
 /turf/simulated/floor/tiled/brettonian/corner
 	icon_state = "bretcobcorner"
+	initial_flooring = /decl/flooring/tiling/brettonian/corner
 
 /turf/simulated/floor/tiled/brettonian/side
 	icon_state = "bretcobside"
+	initial_flooring = /decl/flooring/tiling/brettonian/side
 
 /turf/simulated/floor/carpet
 	name = "brown carpet"

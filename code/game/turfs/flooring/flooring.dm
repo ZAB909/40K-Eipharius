@@ -126,6 +126,12 @@ var/list/flooring_types
 /decl/flooring/tiling/brettonian
 	icon_base = "bretcob"
 
+/decl/flooring/tiling/brettonian/corner
+	icon_base = "bretcobcorner"
+
+/decl/flooring/tiling/brettonian/side
+	icon_base = "bretcobside"
+
 
 /decl/flooring/tiling/mono
 	icon_base = "monotile"
