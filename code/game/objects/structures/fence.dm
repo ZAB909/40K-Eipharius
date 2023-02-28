@@ -11,10 +11,8 @@
 	desc = "A chain link fence. Not as effective as a wall, but generally it keeps people out."
 	density = TRUE
 	anchored = TRUE
-	icon = 'icons/fallout/structures/fences.dmi'
+	icon = 'icons/obj/structures/wattlefence.dmi'
 	icon_state = "straight"
-	barricade = TRUE
-	proj_pass_rate = 95
 	var/cuttable = TRUE
 	var/hole_size= NO_HOLE
 	var/invulnerable = FALSE
@@ -55,7 +53,7 @@
 	icon_state = "straight_cut3"
 	hole_size = LARGE_HOLE
 
-
+/*
 /obj/structure/fence/attackby(obj/item/W, mob/user)
 	if(istype(W, /obj/item/wirecutters))
 		if(!cuttable)
@@ -91,32 +89,32 @@
 				update_cut_status()
 
 
-	if(istype(W, /obj/item/stack/rods))
-		var/obj/item/stack/rods/rods = W
+	if(istype(W, /obj/item/stack/logs))
+		var/obj/item/stack/logs/logs = W
 		switch(hole_size)
 			if(NO_HOLE)
 				to_chat(user, "<span class='warning'>You cannot repair \the [src] any further!</span>")
 				return
 			if(MEDIUM_HOLE)
-				if(rods.get_amount() < 2)
-					to_chat(user, "<span class='warning'>You need at least two rods to repair \the [src]!</span>")
+				if(logs.get_amount() < 2)
+					to_chat(user, "<span class='warning'>You need at least two logs to repair \the [src]!</span>")
 					return
 				to_chat(user, "<span class='notice'>You start repairing \the [src]...</span>")
 				if(do_after(user, 20, target = src))
-					if(rods.get_amount() < 2)
+					if(logs.get_amount() < 2)
 						return
-					rods.use(2)
+					logs.use(2)
 					to_chat(user, "<span class='notice'>You completely repair the hole in \the [src].</span>")
 					hole_size = NO_HOLE
 			if(LARGE_HOLE)
-				if(rods.get_amount() < 2)
-					to_chat(user, "<span class='warning'>You need at least two rods to repair \the [src]!</span>")
+				if(logs.get_amount() < 2)
+					to_chat(user, "<span class='warning'>You need at least two logs to repair \the [src]!</span>")
 					return
 				to_chat(user, "<span class='notice'>You start repairing \the [src]...</span>")
 				if(do_after(user, 20, target = src))
-					if(rods.get_amount() < 2)
+					if(logs.get_amount() < 2)
 						return
-					rods.use(2)
+					logs.use(2)
 					to_chat(user, "<span class='notice'>You repair a bit of the hole in \the [src].</span>")
 					hole_size = MEDIUM_HOLE
 
@@ -126,7 +124,7 @@
 
 /obj/structure/fence/deconstruct(disassembled = TRUE)
 	if(!(flags_1 & NODECONSTRUCT_1))
-		new /obj/item/stack/rods(get_turf(src), 4)
+		new /obj/item/stack/logs(get_turf(src), 4)
 	qdel(src)
 
 /obj/structure/fence/proc/update_cut_status()
@@ -148,103 +146,7 @@
 				return
 			icon_state = "straight_cut3"
 
-//FENCE DOORS
-
-/obj/structure/fence/door
-	name = "fence door"
-	desc = "Not very useful without a real lock."
-	icon_state = "door_closed"
-	cuttable = FALSE
-	var/open = FALSE
-
-/obj/structure/fence/door/Initialize()
-	. = ..()
-
-	update_door_status()
-
-/obj/structure/fence/door/opened
-	icon_state = "door_opened"
-	open = TRUE
-	density = TRUE
-
-/obj/structure/fence/door/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
-	if(can_open(user))
-		toggle(user)
-
-	return TRUE
-
-/obj/structure/fence/door/proc/toggle(mob/user)
-	switch(open)
-		if(FALSE)
-			visible_message("<span class='notice'>\The [user] opens \the [src].</span>")
-			open = TRUE
-		if(TRUE)
-			visible_message("<span class='notice'>\The [user] closes \the [src].</span>")
-			open = FALSE
-
-	update_door_status()
-	playsound(src, 'sound/machines/click.ogg', 100, 1)
-
-/obj/structure/fence/door/proc/update_door_status()
-	switch(open)
-		if(FALSE)
-			density = TRUE
-			icon_state = "door_closed"
-		if(TRUE)
-			density = FALSE
-			icon_state = "door_opened"
-
-/obj/structure/fence/door/proc/can_open(mob/user)
-	return TRUE
-
-/obj/structure/simple_door/metal/fence
-	name = "fence gate"
-	desc = "A gate for a fence."
-	icon = 'icons/fallout/structures/fences.dmi'
-	icon_state = "fence"
-	door_type = "fence"
-	open_sound = "sound/f13machines/doorchainlink_open.ogg"
-	close_sound = "sound/f13machines/doorchainlink_close.ogg"
-	opacity = FALSE
-	base_opacity = FALSE
-	can_hold_padlock = TRUE
-	opening_time = 3
-	closing_time = 2
-	hard_open = 0
-
-//Obsolete handrails, railing is better
-/obj/structure/fence/handrail_end
-	name = "handrail"
-	desc = "A waist high handrail, perhaps you could climb over it."
-	icon = 'icons/obj/fence.dmi'
-	icon_state = "y_handrail_end"
-	cuttable = FALSE
-
-/obj/structure/fence/handrail_corner
-	name = "handrail"
-	desc = "A waist high handrail, perhaps you could climb over it."
-	icon = 'icons/obj/fence.dmi'
-	icon_state = "y_handrail_corner"
-	cuttable = FALSE
-	climbable = TRUE
-
-/obj/structure/fence/handrail
-	name = "handrail"
-	desc = "A waist high handrail, perhaps you could climb over it."
-	icon = 'icons/obj/fence.dmi'
-	icon_state = "y_handrail"
-	cuttable= FALSE
-	climbable = TRUE
-
-/obj/structure/fence/handrail_end/non_dense
-	name = "handrail"
-	desc = "A waist high handrail, perhaps you could climb over it."
-	icon = 'icons/obj/fence.dmi'
-	icon_state = "y_handrail_end"
-	cuttable = FALSE
-	density = FALSE
-	layer = ABOVE_MOB_LAYER
-
+*/
 #undef CUT_TIME
 #undef CLIMB_TIME
 
@@ -253,37 +155,3 @@
 #undef LARGE_HOLE
 #undef DESTROY_HOLE
 
-// Obsolete wooden fences and dancing pole, better in railing.
-/obj/structure/fence/wooden
-	name = "wooden fence"
-	desc = "A fence fashioned out of wood planks. Designed to keep animals in and vagrants out"
-	icon = 'icons/obj/fence.dmi'
-	icon_state = "straight_wood"
-	cuttable = FALSE
-	climbable = TRUE
-	proj_pass_rate = 80
-
-/obj/structure/fence/end/wooden
-	icon = 'icons/obj/fence.dmi'
-	icon_state = "end_wood"
-	cuttable = FALSE
-
-/obj/structure/fence/corner/wooden
-	icon = 'icons/obj/fence.dmi'
-	icon_state = "corner_wood"
-	cuttable = FALSE
-
-/obj/structure/fence/pole_t
-	name = "pole"
-	icon_state = "pole_t"
-	desc = "A stout pole."
-	cuttable = FALSE
-	density = FALSE
-	layer = ABOVE_MOB_LAYER
-
-/obj/structure/fence/pole_b
-	name = "pole"
-	icon_state = "pole_b"
-	desc = "A pole, commonly used in traditional fertility rituals. Or by degenerates."
-	cuttable = FALSE
-	density = FALSE
