@@ -13,7 +13,7 @@
 	system_name = "The Old World"
 
 	lobby_icon = 'maps/fantasy/fullscreen.dmi'
-	lobby_screens = list("lobby1","lobby2","lobby3")
+	lobby_screens = list("lobby1","lobby2","lobby3","lobby4")
 
 	station_levels = list(1,2,3,4)
 	contact_levels = list(1,2,3,4)
