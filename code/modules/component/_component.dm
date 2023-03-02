@@ -190,7 +190,7 @@
 		. |= call(listening_datum, queued_calls[listening_datum])(arglist(arguments))
 
 /datum/proc/GetComponent(datum/component/c_type)
-	//RETURN_TYPE(c_type) Enable if we get linters
+	RETURN_TYPE(c_type)
 	if(initial(c_type.dupe_mode) == COMPONENT_DUPE_ALLOWED || initial(c_type.dupe_mode) == COMPONENT_DUPE_SELECTIVE)
 		crash_with("GetComponent was called to get a component of which multiple copies could be on an object. This can easily break and should be changed. Type: \[[c_type]\]")
 	var/list/dc = datum_components
@@ -201,7 +201,7 @@
 		return .[1]
 
 /datum/proc/GetExactComponent(datum/component/c_type)
-	//RETURN_TYPE(c_type) Enable if we get linters
+	RETURN_TYPE(c_type)
 	if(initial(c_type.dupe_mode) == COMPONENT_DUPE_ALLOWED || initial(c_type.dupe_mode) == COMPONENT_DUPE_SELECTIVE)
 		crash_with("GetComponent was called to get a component of which multiple copies could be on an object. This can easily break and should be changed. Type: \[[c_type]\]")
 	var/list/dc = datum_components

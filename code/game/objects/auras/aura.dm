@@ -115,8 +115,7 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 			if(E?.organ_tag != BP_HEAD && !E.vital && (E.is_stump() || E.status & ORGAN_DEAD))	//Skips heads and vital bits...
 				if (H.nutrition > grow_threshold)
 					E.removed()			//...because no one wants their head to explode to make way for a new one.
-					qdel(E)
-					E= null
+					QDEL_NULL(E)
 				else
 					low_nut_warning(E.name)
 			if(!E)
@@ -235,8 +234,7 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 			var/obj/item/organ/external/E = H.organs_by_name[limb_type]
 			if((E.is_stump() || E.status & ORGAN_DEAD))	//Skips heads and vital bits...
 				E.removed()			//...because no one wants their head to explode to make way for a new one.
-				qdel(E)
-				E= null
+				QDEL_NULL(E)
 
 			if(!E)
 				var/list/organ_data = H.species.has_limbs[limb_type]
