@@ -181,7 +181,7 @@ function find_code {
     if [[ -z ${CODEPATH+x} ]]; then
         if [[ -d ./code ]]
         then CODEPATH=.
-        else if [[ -d ../code ]]
+        elif [[ -d ../code ]]
             then CODEPATH=..
             fi
         fi
@@ -252,6 +252,17 @@ function run_byond_tests {
     run_test_fail "check no failures" "grep 'ERROR:' log.txt"
 }
 
+function run_compile_tests {
+    msg "*** COMPILING ***"
+    find_byond_deps
+    if [[ "$CI" == "true" ]]; then
+        msg "installing BYOND"
+        ./install-byond.sh || exit 1
+        source $HOME/BYOND-${BYOND_MAJOR}.${BYOND_MINOR}/byond/bin/byondsetup
+    fi
+    run_test "compile game" "scripts/dm.sh IS12Warfare.dme"
+}
+
 function run_all_tests {
     run_code_tests
     run_web_tests
@@ -260,7 +271,7 @@ function run_all_tests {
 
 function run_configured_tests {
     if [[ -z ${TEST+z} ]]; then
-        msg_bad "You must provide TEST in environment; valid options ALL,MAP,WEB,CODE"
+        msg_bad "You must provide TEST in environment; valid options ALL,MAP,WEB,CODE,COMPILE"
         msg_meh "Note: map tests require MAP_PATH set"
         exit 1
     fi
@@ -276,6 +287,9 @@ function run_configured_tests {
             ;;
         "CODE")
             run_code_tests
+            ;;
+        "COMPILE") # just to make sure stuff actually compiles
+            run_compile_tests
             ;;
         *)
             fail "invalid option for \$TEST: '$TEST'"

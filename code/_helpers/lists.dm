@@ -25,7 +25,7 @@
 		else  return "[jointext(input, comma_text, 1, -1)][final_comma_text][and_text][input[input.len]]"
 
 //Returns list element or null. Should prevent "index out of bounds" error.
-proc/listgetindex(var/list/list,index)
+/proc/listgetindex(var/list/list,index)
 	if(istype(list) && list.len)
 		if(isnum(index))
 			if(InRange(index,1,list.len))
@@ -35,13 +35,13 @@ proc/listgetindex(var/list/list,index)
 	return
 
 //Return either pick(list) or null if list is not of type /list or is empty
-proc/safepick(list/list)
+/proc/safepick(list/list)
 	if(!islist(list) || !list.len)
 		return
 	return pick(list)
 
 //Checks if the list is empty
-proc/isemptylist(list/list)
+/proc/isemptylist(list/list)
 	if(!list.len)
 		return 1
 	return 0
@@ -68,12 +68,12 @@ proc/isemptylist(list/list)
 	return instances
 
 //Empties the list by .Cut(). Setting lenght = 0 has been confirmed to leak references.
-proc/clearlist(var/list/L)
+/proc/clearlist(var/list/L)
 	if(islist(L))
 		L.Cut()
 
 //Removes any null entries from the list
-proc/listclearnulls(list/list)
+/proc/listclearnulls(list/list)
 	if(istype(list))
 		while(null in list)
 			list -= null
