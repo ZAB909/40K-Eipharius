@@ -19,7 +19,7 @@
 
 		hellbans.Add(ckey(line))
 
-	if(!hellbans)
+	if(!length(hellbans))
 		log_and_message_admins("hellbans: empty or missing.")
 		hellbans = null
 	else
