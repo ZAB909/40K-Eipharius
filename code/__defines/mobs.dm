@@ -287,6 +287,7 @@
 #define SPECIES_ORK_MEK "Mekboy"
 #define SPECIES_ORK_BOSS "Warboss"
 #define SPECIES_KROOT "Kroot"
+#define SPECIES_DWARF "Dwarf"
 #define SPECIES_TAU "Tau"
 #define SPECIES_BLOODPACT "Bloodpact"
 #define SPECIES_SKITARII "Skitarii"
@@ -395,6 +396,10 @@
 #define NURGLE "Nurgle"
 #define TAU "Tau"
 #define TYRANIDS "Tyranids"
+#define SKAVEN "Skaven"
+#define DWARFS "Dwarfs"
+#define OGRES "Ogres"
+#define ELVES "Elves"
 
 /*
 #define SKILL_LOW(x) x<=4

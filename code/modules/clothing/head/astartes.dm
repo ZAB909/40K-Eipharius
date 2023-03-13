@@ -7,6 +7,7 @@
 	icon_state = "ultrahelm"
 	item_state = "ultrahelm"
 	armor = list(melee = 65, bullet = 70, laser = 60, energy = 60, bomb = 60, bio = 100, rad = 100)
+	/*
 	str_requirement = 25
 	unacidable = 1
 	body_parts_covered = HEAD|FACE|EYES
@@ -16,7 +17,7 @@
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	species_restricted = list(SPECIES_ASTARTES)
 	sales_price = 70
-
+	*/
 /obj/item/clothing/head/helmet/astartes/bloodangel
 	name = "Astartes Mark VII Helmet"
 	desc = "The daunting helmet of the Emperor's chosen, This one bears the symbol of the IXth Chapter, Blood Angels."
@@ -24,6 +25,12 @@
 	item_state = "banghelm"
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
 
+/obj/item/clothing/head/helmet/astartes/bloodangel/prophet
+	name = "Astartes Mark VII Helmet"
+	desc = "The daunting helmet of the Emperor's chosen, This one bears the symbol of the IXth Chapter, Blood Angels."
+	icon_state = "sprophet"
+	item_state = "sprophet"
+	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
 /obj/item/clothing/head/helmet/astartes/ravenguard
 	name = "Astartes Mark VII Helmet"
 	desc = "The daunting helmet of the Emperor's black birds, This one bears the symbol of the XIXth Chapter, Raven Guards."

@@ -72,7 +72,7 @@
 	var/castes = input("Select a caste","Caste Selection") as null|anything in list("Fire Warrior", "Water Caste Merchant", "Earth Caste Mechanic", "Kroot Hunter")
 	switch(castes)
 		if("Fire Warrior")
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/fwarmor, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/fw, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/gun/energy/pulse/pulserifle, slot_r_hand)
