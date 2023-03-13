@@ -19,7 +19,7 @@
 
 		hellbans.Add(ckey(line))
 
-	if(!length(hellbans))
+	if(!hellbans.len)
 		log_and_message_admins("hellbans: empty or missing.")
 		hellbans = null
 	else
@@ -33,7 +33,7 @@
 	return hellbanned
 
 /client/proc/check_hellbanned()
-	if((hellbans && ckey) in hellbans)
+	if(hellbans && ckey in hellbans)
 		hellbanned = 1
 
 /datum/admin/proc/add_hellban()

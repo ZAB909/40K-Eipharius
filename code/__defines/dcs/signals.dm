@@ -7,7 +7,7 @@
 
 //////////////////////////////////////////////////////////////////
 
-#define SIGNAL_HANDLER SHOULD_NOT_SLEEP(TRUE)
+//#define SIGNAL_HANDLER SHOULD_NOT_SLEEP(TRUE) Enable if we get linters
 
 // /datum signals
 /// when a component is added to a datum: (/datum/component)

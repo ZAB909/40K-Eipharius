@@ -15,15 +15,15 @@
 		RegisterSignal(target, COMSIG_PARENT_QDELETING, .proc/OnTargetDelete, override = TRUE)
 
 /datum/element/proc/OnTargetDelete(datum/source, force)
-	SIGNAL_HANDLER
+	//SIGNAL_HANDLER
 	Detach(source)
 
 /// Deactivates the functionality defines by the element on the given datum
 /datum/element/proc/Detach(datum/source, ...)
-	SIGNAL_HANDLER
+	//SIGNAL_HANDLER
 
 	SEND_SIGNAL(source, COMSIG_ELEMENT_DETACH, src)
-	SHOULD_CALL_PARENT(TRUE)
+	//SHOULD_CALL_PARENT(TRUE) Enable if we get linters
 	UnregisterSignal(source, COMSIG_PARENT_QDELETING)
 
 /datum/element/Destroy(force)
