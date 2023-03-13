@@ -115,8 +115,8 @@
 	desc = "An energy efficient flashlight."
 	icon_state = "biglight"
 	item_state = "biglight"
-	brightness_on = 6
-	flashlight_power = 3
+	brightness_on = 12
+	flashlight_power = 6
 
 /obj/item/device/flashlight/flashdark
 	name = "flashdark"

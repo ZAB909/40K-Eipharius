@@ -260,7 +260,7 @@ obj/item/clothing/suit/armor
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_HOLSTER)
 	allowed = list(/obj/item/gun/projectile/ork, /obj/item/melee/sword/choppa)
 	blood_overlay_type = "armor"
-	canremove = 0
+	canremove = 1
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -286,6 +286,20 @@ obj/item/clothing/suit/armor
 	icon_state = "zoga"
 	item_state = "zoga"
 	armor = list(melee = 15, bullet = 5, laser = 5, energy = 5, bomb = 5, bio = 0, rad = 0)
+
+/obj/item/clothing/suit/armor/orkarmor/sboy
+	name = "Savage Boy Armor"
+	desc = "All da luxuries a boy of da tribes needz"
+	icon_state = "sboy"
+	item_state = "sboy"
+	armor = list(melee = 40, bullet = 20, laser = 5, energy = 5, bomb = 5, bio = 0, rad = 0)
+
+/obj/item/clothing/suit/armor/orkarmor/sbigun
+	name = "Savage Big Un' Armor"
+	desc = "Scavenged bits and bobs of stuffz da Big Unz' killed emselves, warded using MORK's (or GORK'S) WAAAAAAAAAAAAAAAAAGH"
+	icon_state = "sbigun"
+	item_state = "sbigun"
+	armor = list(melee = 70, bullet = 40, laser = 5, energy = 5, bomb = 5, bio = 0, rad = 0)
 
 
 // NOBLES & SERVANTS
