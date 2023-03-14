@@ -1,22 +1,42 @@
-<h1>Welcome to Forge World Eipharius!</h1>
+<h1>Welcome to Warhammer Fantasy, The Old World!</h1>
 
-Do not break the atmosphere.
+Do not break the atmosphere, play a believable character in the Warhammer Fantasy Setting.
 
-Do not metagame.</strong>
+[LORE INTRO]
 
-<strong>
-You have recently arrived or have been contained for a time within the ice world of Eipharius, bastioned within the noble frontier systems of the Eminent Domain. Plagued by gravitic storms, the system wanders sloppily through the fringes of Imperial Space, having suffered in it's time two cosmological collisions in it's lifetime. It's rogue star is locked in a drunken dance with Pymbyle Minor, a flirtatious encounter of gravities that would take millions of years to resolve. Rich in ultra-rare metals including ancylitum and phorydnum, Eipharius has been a miner's plunder-haven for as long as it has been identified. 
+After an unsuccessful inheritance and claiming of the Prince's rightful property. The Prince has departed from Marienburg, purchasing a small detachment of Free Company from his family's connections, using the last of his remaining family riches to begin anew in his relocation to the Border Princes. A lawless and desolate wasteland filled by dwarfs, the greenskins, and worse. The french.
 
-Disconnected millennia ago from Terra it's inhabitants both human and xenos tragically vanished centuries prior to Imperial Colonization, the grotesque ruins of the old city reclaimed by the Lord Trader over decades with the aid of opulent benefactors. 
+ Reclaiming an old small town and using it's location as a good standpoint to become the middle ground for the Silk Road. His new realm prospered, being the middle ground for the traders from Cathay to sell their wares. To the grumbling Dwarfs selling their preciously sculpted wares, passed down from the ages in knowledge of forging.
 
-Messina is forever ailing and weak; it is worn out and withering. Many parts of it are crumbling, and there are some parts that are so decayed that no one dares visit them for fear of dislodging a wall or a ragged roof with no more force than the sound of footsteps. The city has always been an old place, with damp around its feet and dust in its mouth. War made this city mighty once. But war brought it to it's knees.
+The thriving town eventually had the capital to build stone walls, and a keep for his Lordship. Still called merely the Prince. But he was a Border Prince, now. And it came with additional attention from others envious of his quick success. The provinces of the Empire sent down a witch hunter to investigate his quick success. The Prince begrudgingly accepting his presence, merely for the fact that positive relations with the southern Empire could bring forth more trade routes.
+
+More people immigrated to the surrounding area. Some less wanted than others. Free citizens of the empire, retired swordsmen, flagellants, humble farmers. A tavern was opened, a den of beer and celebration. But the flourishing petty realm was noticed by too many. Dark elves have taken to raiding the new immigrant citizens and taking them in chains as slaves. The Nomadic Greenskins have made a new camp nearby, surely waiting for a good ol' waaagh to fight the Free Company in the Prince's domain. And scarier rumours linger. Things with tails. Scurrying along. When was the last time you saw someone that went down into the sewers and they came back, anyway?
+
+
 
 [TIMELINE]
-Eipharius was first settled in M41. 923 by the current Lord Trader. 
-Current Year: M41. 973 Standard.
 
-You can always a-help if you are going to do something that involves bending the rules or PRAY if you'd like help with a gimmick. There's no guarantee we answer prays, but it's the best way to ask to help staff setup something interesting for you.
+Current year: 2522, Storm of Chaos
 
-Furthermore, controls can be seen in OOC tab -> View Controls. Always make sure you turn on combat mode when fighting and keep in mind your special abilities such as Feint or Quick Attack under your UI menu. 
-Never be afraid to ahelp!
-<strong>Discord:</strong> <a href="https://discord.gg/xthVK85W3M">for posting of bugs, discussion and issues.</a> <� <strong>CLICK HERE!</strong>
+Events may change the exact year or current scenario in lore represented.
+
+<strong>
+[RULES]
+
+You can always a-help if you want to do something interesting or unsure about something.
+
+ The Old World is dedicated to providing players with a Warhammer-themed fantasy roleplaying environment, with an emphasis on player freedom and frequent events. We allow players to weave their fates into a round’s story as much as they want, and have multiple factions of ambiguous relationship towards another. You can do ANYTHING as long as you have a decent reason for your character to do so. Antag roles aren't required and self antagging is perfectly allowed.
+ Our most important rule is escalation: Escalation is dependent on your species and relationship with the person you are attacking. You must escalate when you share the species or are on friendly terms with the person. Eg. a human vs a human requires escalation. A skaven and a human does not. An orc and a human does not. We don't promote killing on sight, as we are a roleplay server and we encourage people to roleplay, but it's important to know what behaviour will get you banned or not.
+
+ Races that spawn with each other eg. Halfings in a human settlement, goblins with ogres ect. are considered friendly terms with each other and must be escalated upon. You must also make your intentions clear and known. Saying "hi" to a fellow human and then stabbing them is not valid escalation. Saying "Your money or your life!" works. Voicelines also work, praising the dark chaos gods or any other hostile voice line counts as escalation.
+
+
+Join the discord for a proper list of the rules.
+
+</strong>
+
+Furthermore, controls can be seen in OOC tab -> View Controls. Always make sure you turn on combat mode when fighting and keep in mind your special abilities such as Feint or Quick Attack under your UI menu.
+
+Join the discord to know future tests, discussion and report bugs or help development!
+
+<strong>Discord: https://discord.gg/DQSsYmNAkP </strong>
