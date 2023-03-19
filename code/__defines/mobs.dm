@@ -314,20 +314,20 @@
 #define MOOD_LEVEL_SAD3 -15
 #define MOOD_LEVEL_SAD4 -20
 
-#define NUTRITION_LEVEL_FAT 550
-#define NUTRITION_LEVEL_FULL 500
-#define NUTRITION_LEVEL_WELL_FED 450
-#define NUTRITION_LEVEL_FED 350
+#define NUTRITION_LEVEL_FAT 500
+#define NUTRITION_LEVEL_FULL 450
+#define NUTRITION_LEVEL_WELL_FED 400
+#define NUTRITION_LEVEL_FED 300
 #define NUTRITION_LEVEL_HUNGRY 250
 #define NUTRITION_LEVEL_STARVING 150
 
 //Thirst levels for humans
-#define THIRST_LEVEL_MAX 800
-#define THIRST_LEVEL_FILLED 600
+#define THIRST_LEVEL_MAX 600
+#define THIRST_LEVEL_FILLED 450
 #define THIRST_LEVEL_MEDIUM 300
 #define THIRST_LEVEL_THIRSTY 200
 #define THIRST_LEVEL_DEHYDRATED 50
-#define THIRST_FACTOR 0.25
+#define THIRST_FACTOR 0.5 // eipharius is 0.25
 
 //Disgust levels for humans
 #define DISGUST_LEVEL_MAXEDOUT 150
@@ -337,15 +337,15 @@
 
 //Starvation stuff
 
-#define STARVATION_MIN 60 //If you have less nutrition than this value, the hunger indicator starts flashing - THIS ISN'T USED!
-#define STARVATION_NOTICE 45 //If you have more nutrition than this value, you get an occasional message reminding you that you're going to starve soon
-#define STARVATION_WEAKNESS 20 //Otherwise, if you have more nutrition than this value, you occasionally become weak and receive minor damage
-#define STARVATION_NEARDEATH 5 //Otherwise, if you have more nutrition than this value, you have seizures and occasionally receive damage
+#define STARVATION_MIN 90 //If you have less nutrition than this value, the hunger indicator starts flashing - THIS ISN'T USED!
+#define STARVATION_NOTICE 80 //If you have more nutrition than this value, you get an occasional message reminding you that you're going to starve soon
+#define STARVATION_WEAKNESS 35 //Otherwise, if you have more nutrition than this value, you occasionally become weak and receive minor damage
+#define STARVATION_NEARDEATH 20 //Otherwise, if you have more nutrition than this value, you have seizures and occasionally receive damage
 
 //If you have less nutrition than STARVATION_NEARDEATH, you start getting damage
-#define STARVATION_OXY_DAMAGE 2.5
-#define STARVATION_TOX_DAMAGE 2.5
-#define STARVATION_BRAIN_DAMAGE 2.5
+#define STARVATION_OXY_DAMAGE 3.5
+#define STARVATION_TOX_DAMAGE 3.5
+#define STARVATION_BRAIN_DAMAGE 3.5
 
 #define STARVATION_OXY_HEAL_RATE 1 //While starving, THIS much oxygen damage is restored per life tick (instead of the default 5)
 
