@@ -17,6 +17,7 @@
 	/datum/job/knight,
 	/datum/job/squire,
 	/datum/job/witchhunter,
+	/datum/job/inncook,
 	/datum/job/adventurer,
 	/datum/job/brigand,
 	/datum/job/artificer,

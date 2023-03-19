@@ -111,6 +111,18 @@
 	latejoin_at_spawnpoints = FALSE
 	announced = FALSE
 
+/datum/job/inncook
+	title = "Inn Cook"
+	department_flag = PIL
+	social_class = SOCIAL_CLASS_MIN
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "border prince test supervisor"
+	selection_color = "#c4c4c4"
+	outfit_type = /decl/hierarchy/outfit/job
+	latejoin_at_spawnpoints = FALSE
+	announced = FALSE
+
 
 /datum/job/brigand
 	title = "Brigand"
