@@ -18,7 +18,7 @@
 	var/operating = 0
 	var/autoclose = 0
 	var/glass = 0
-	var/normalspeed = 1
+	var/normalspeed = 1 // i think this may be the bug that makes doors perma open and you cant close them. investigate
 	var/heat_proof = 0 // For glass airlocks/opacity firedoors
 	var/air_properties_vary_with_direction = 0
 	var/maxhealth = 300

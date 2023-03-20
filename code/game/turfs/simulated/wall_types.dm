@@ -192,8 +192,8 @@
 	name = "Stone brick wall"
 	desc = "A formidable wall made entirely of stone bricks. Capable of being the battlements of a castle."
 	icon = 'icons/turf/dwarf.dmi'
-	icon_state = "rich_wall-0"
-	walltype = "Dwarf Wall"
+	icon_state = "dwarfwall0"
+	walltype = "dwarfwall"
 	mineral = "metal"
 	integrity = 1500
 
