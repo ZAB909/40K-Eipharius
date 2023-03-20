@@ -187,3 +187,13 @@
 	walltype = "brickstone"
 	mineral = "metal"
 	integrity = 1500
+
+/turf/simulated/wall/dwarf
+	name = "Stone brick wall"
+	desc = "A formidable wall made entirely of stone bricks. Capable of being the battlements of a castle."
+	icon = 'icons/turf/dwarf.dmi'
+	icon_state = "rich_wall-0"
+	walltype = "Dwarf Wall"
+	mineral = "metal"
+	integrity = 1500
+
