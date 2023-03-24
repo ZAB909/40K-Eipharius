@@ -6,6 +6,7 @@
 /obj/effect/overmap/sector/exoplanet/desert/generate_map()
 	if(prob(70))
 		lightlevel = rand(5,10)/10	//deserts are usually :lit:
+		/* // this adds a dusty effect on all desert, i dont want ork players going through this pain on a daily basis
 	for(var/zlevel in map_z)
 		var/datum/random_map/noise/exoplanet/M = new /datum/random_map/noise/exoplanet/desert(md5(world.time + rand(-100,1000)),1,1,zlevel,maxx,maxy,0,1,1)
 		get_biostuff(M)
@@ -16,7 +17,7 @@
 	if(atmosphere)
 		atmosphere.temperature = T20C + rand(20, 100)
 		atmosphere.update_values()
-
+*/
 /obj/effect/overmap/sector/exoplanet/desert/adapt_seed(var/datum/seed/S)
 	..()
 	if(prob(90))
@@ -38,7 +39,7 @@
 	large_flora_prob = 0
 	flora_diversity = 4
 	fauna_types = list(/mob/living/simple_animal/thinbug, /mob/living/simple_animal/tindalos, /mob/living/simple_animal/hostile/voxslug)
-
+	/* // bullshit heat haze shit
 /datum/random_map/noise/exoplanet/desert/get_additional_spawns(var/value, var/turf/T)
 	..()
 	var/v = noise2value(value)
@@ -46,7 +47,7 @@
 		T.icon_state = "desert[v-1]"
 		if(prob(10))
 			new/obj/structure/quicksand(T)
-
+	*/
 /datum/random_map/noise/ore/rich
 	deep_val = 0.7
 	rare_val = 0.5

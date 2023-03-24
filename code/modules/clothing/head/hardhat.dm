@@ -52,3 +52,12 @@
 	brightness_on = 8
 	unacidable = 1
 	armor = list(melee = 50, bullet = 30, laser = 40,energy = 40, bomb = 70, bio = 100, rad = 20)
+
+/obj/item/clothing/head/hardhat/rat/warlock
+	icon_state = "rat_warlock"
+	item_state = "rat_warlock"
+	brightness_on = 8
+	unacidable = 1
+	armor = list(melee = 50, bullet = 30, laser = 40,energy = 40, bomb = 70, bio = 100, rad = 100)
+	flags_inv = BLOCKHAIR|BLOCKHEADHAIR|HIDEEARS|HIDEEYES
+	flash_protection = FLASH_PROTECTION_MAJOR

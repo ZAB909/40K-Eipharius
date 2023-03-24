@@ -164,6 +164,12 @@
 	desc = "For prime comfort in absolute luxury."
 	icon_state = "bed2"
 
+/obj/structure/bed/dwarf
+	name = "Dwarf Bed"
+	desc = "Rock and stone for your skin and bones!"
+	icon_state = "psychbed"
+	base_icon = "psychbed"
+
 /obj/structure/bed/psych
 	name = "psychiatrist's couch"
 	desc = "For prime comfort during psychiatric evaluations."

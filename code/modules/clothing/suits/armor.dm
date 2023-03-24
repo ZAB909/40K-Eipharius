@@ -249,27 +249,6 @@ obj/item/clothing/suit/armor
 	icon_state = "prince"
 	item_state = "prince"
 
-// Tau
-
-/obj/item/clothing/suit/armor/fwarmor
-	name = "fire warrior armor"
-	desc = "The impeccable yellow and brown armor of the Tau warrior caste"
-	icon_state = "fw_armor"
-	item_state = "fw_armor"
-	armor = list(melee = 35, bullet = 35, laser = 35, energy = 35, bomb = 35, bio = 0, rad = 0)
-	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA)
-	blood_overlay_type = "armor"
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-	sales_price = 40
-
-/obj/item/clothing/suit/armor/fwarmor/breacher
-	name = "Breacher Armor"
-	desc = "The white and bright armor of a Tau Breacher."
-	icon_state = "tbrea"
-	item_state = "tbrea"
-
 // Ork
 
 /obj/item/clothing/suit/armor/orkarmor
@@ -281,7 +260,7 @@ obj/item/clothing/suit/armor
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_HOLSTER)
 	allowed = list(/obj/item/gun/projectile/ork, /obj/item/melee/sword/choppa)
 	blood_overlay_type = "armor"
-	canremove = 0
+	canremove = 1
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -307,6 +286,20 @@ obj/item/clothing/suit/armor
 	icon_state = "zoga"
 	item_state = "zoga"
 	armor = list(melee = 15, bullet = 5, laser = 5, energy = 5, bomb = 5, bio = 0, rad = 0)
+
+/obj/item/clothing/suit/armor/orkarmor/sboy
+	name = "Savage Boy Armor"
+	desc = "All da luxuries a boy of da tribes needz"
+	icon_state = "sboy"
+	item_state = "sboy"
+	armor = list(melee = 40, bullet = 20, laser = 5, energy = 5, bomb = 5, bio = 0, rad = 0)
+
+/obj/item/clothing/suit/armor/orkarmor/sbigun
+	name = "Savage Big Un' Armor"
+	desc = "Scavenged bits and bobs of stuffz da Big Unz' killed emselves, warded using MORK's (or GORK'S) WAAAAAAAAAAAAAAAAAGH"
+	icon_state = "sbigun"
+	item_state = "sbigun"
+	armor = list(melee = 70, bullet = 40, laser = 5, energy = 5, bomb = 5, bio = 0, rad = 0)
 
 
 // NOBLES & SERVANTS
@@ -1806,7 +1799,7 @@ obj/item/clothing/suit/armor
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
-/obj/item/clothing/suit/armor/stormvermin
+/obj/item/clothing/suit/armor/skaven/stormvermin
 	name = "Clan Mors Stormvermin"
 	desc = "The gambeson of the less fortunate men among the Prince's personal guard."
 	icon_state = "rat_red"
@@ -1817,4 +1810,17 @@ obj/item/clothing/suit/armor
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/storage/hazardvest/warlock
+	name = "Mk IV Warlock Engineer Armor"
+	desc = "Take-stolen from Clan Skryre and improve-upgraded via the Warlock's own requirements and needs. It's warpstone protection... protect-helps yes yes."
+	icon_state = "rat_warlock"
+	item_state = "rat_warlock"
+	armor = list(melee = 50, bullet = 60, laser = 60, energy = 0, bomb = 60, bio = 100, rad = 100)
+	canremove = 0
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	unacidable = 1
+
 

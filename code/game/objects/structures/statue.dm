@@ -184,6 +184,17 @@
 	plane = ABOVE_HUMAN_PLANE
 	bound_width = 64
 
+/obj/structure/statue/grudgetome
+	name = "Grudge Tome"
+	desc = "The holy Tome of the Dwarfs. Where they will put your name if you call them short."
+	icon = 'icons/obj/64x64.dmi'
+	icon_state = "column3" // wip
+	anchored = 1
+	density = 1
+	layer = 4
+	plane = ABOVE_HUMAN_PLANE
+	bound_width = 64
+
 
 
 /obj/structure/statue/guardshrine/attackby(obj/item/W as obj, mob/user as mob)

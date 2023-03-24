@@ -27,7 +27,7 @@
 
 /obj/structure/table/woodentable
 	icon_state = "solid_preview"
-	color = COLOR_BROWN_ORANGE
+/*  color = COLOR_BROWN_ORANGE */
 	material = "wood"
 
 /obj/structure/table/gamblingtable
