@@ -24,6 +24,12 @@
 	opacity = 1
 	density = 1
 
+/obj/machinery/door/unpowered/dwarf
+	icon = 'icons/obj/doors/dwarfdoor.dmi'
+	name = "Dwarf Stone Door"
+	icon_state = "door1"
+
+
 /obj/machinery/door/unpowered/inn
 	name = "wooden door"
 	icon = 'icons/obj/doors/door_cave2.dmi'

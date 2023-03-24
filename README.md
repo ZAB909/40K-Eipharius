@@ -17,6 +17,8 @@ Code is licensed under the [GNU Affero General Public License v3](http://www.gnu
 
 If you wish to license under GPL v3 please make this clear in the commit message and any added files.
 
-The major change here is that if you host a server using any code licensed under AGPLv3 you are required to provide full source code for your servers users as well including addons and modifications you have made.
+All icons before commit https://github.com/WarhammerTheOldWorld/The-Old-World/commit/0947cf3be74432a63015c4ce50c021b5bb412ee3 are also licensed under GNU AGPL v3.
+
+All icons after commit https://github.com/WarhammerTheOldWorld/The-Old-World/commit/0947cf3be74432a63015c4ce50c021b5bb412ee3 are licensed under CC BY-NC-ND 4.0 https://creativecommons.org/licenses/by-nc-nd/4.0/
 
 **All original art assets are © 2023 The Old World.  All rights reserved. You may not rip the original art assets and use them in your project without consent.

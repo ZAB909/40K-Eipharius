@@ -22,7 +22,7 @@
 	else
 		to_chat(src, "<span class='warning'>The forum URL is not set in the server configuration.</span>")
 	return
-
+/* // add these back when theyre updated to be ours, not eipharius
 #define RULES_FILE "config/rules.html"
 /client/verb/rules()
 	set name = "Rules"
@@ -38,7 +38,7 @@
 	set hidden = 1
 	show_browser(src, file(LORE_FILE), "window=lore;size=480x320")
 #undef LORE_FILE
-
+*/
 /client/verb/hotkeys_help()
 	set name = "View Controls"
 	set category = "OOC"

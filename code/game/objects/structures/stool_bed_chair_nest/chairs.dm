@@ -249,6 +249,24 @@
 /obj/structure/bed/chair/wood/New(var/newloc)
 	..(newloc, "wood")
 
+/obj/structure/bed/chair/wood/dwarf
+	name = "Dwarf wooden chair"
+	desc = "Made by making an elf cry. The best type of crafted item."
+	base_icon = "dwarf_wchair"
+	icon_state = "dwarf_wchair"
+
+/obj/structure/bed/chair/stone
+	name = "Dwarf stone chair"
+	desc = "Chiseled by hand, probably wasn't fun to make. Probably wasn't fun to transport either."
+	base_icon = "dwarf_schair"
+	icon_state = "dwarf_schair"
+
+/obj/structure/bed/chair/stone/throne
+	name = "Dwarf Throne"
+	desc = "Chiseled by hand, probably wasn't fun to make. Probably wasn't fun to transport either."
+	base_icon = "dwarf_throne"
+	icon_state = "dwarf_throne"
+
 /obj/structure/bed/chair/wood/wings
 	base_icon = "wooden_chair_wings"
 	icon_state = "wooden_chair_wings_preview"

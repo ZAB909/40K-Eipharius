@@ -149,7 +149,6 @@
 /material/scrap/generate_recipes()
 	..()
 	recipes += new/datum/stack_recipe("Eavy Metal Helmet", /obj/item/clothing/head/helmet/orkhelmet, 15, 1, 1, 10)
-	recipes += new/datum/stack_recipe("Flashgitz Helmet", /obj/item/clothing/head/helmet/orkhelmet/sight, 12, 1, 1, 10)
 	recipes += new/datum/stack_recipe("Slugga Boy Helmet", /obj/item/clothing/head/helmet/orkhelmet/horns, 8, 1, 1, 10)
 	recipes += new/datum/stack_recipe("Shoota Boy Helmet", /obj/item/clothing/head/helmet/orkhelmet/leather, 8, 1, 1, 10)
 	recipes += new/datum/stack_recipe("Zoggin' Boy Top Knot", /obj/item/clothing/head/helmet/orkhelmet/knot, 4, 1, 1, 10)
